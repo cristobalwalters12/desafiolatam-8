@@ -16,7 +16,7 @@ nav {
 aside {
   grid-area: aside;
   background-color: #e7e7e7;
-  min-height: 90vh;
+  height: 80vh;
   color: black;
   text-align: center;
   display: flex;
@@ -43,11 +43,13 @@ section {
   background-color: #e7e7e7;
   color: white;
   text-align: center;
+  height: 80vh;
+  overflow: auto;
 }
 footer {
   grid-area: footer;
   background-color: #ffffff;
-  height: 9vh;
+  height: 10vh;
   color: black;
   display: flex;
   justify-content: center;
@@ -56,15 +58,15 @@ footer {
 
 .grid-container {
   display: grid;
+
   grid-template-areas:
     "nav nav "
     "aside section  "
     "footer footer  ";
-  grid-template-columns: 20% 80%;
 }
 .grid-products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem;
   margin: 1rem;
